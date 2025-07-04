@@ -8,4 +8,24 @@
     "url": "https://go.hotmart.com/AFILIADO123?ap=U98975639B",
     "category": "Negocios e IA"
   }
+,
+  {
+    "id": "V12345678X",
+    "slug": "velas-artesanales",
+    "name": "Curso de Velas Artesanales desde Casa",
+    "price": 49,
+    "commission": 0.70,
+    "url": "https://go.hotmart.com/AFILIADO123?ap=V12345678X",
+    "category": "Manualidades"
+  },
+  {
+    "id": "P87654321Y",
+    "slug": "gestion-proyectos",
+    "name": "Gestión de Proyectos Ágil 360°",
+    "price": 99,
+    "commission": 0.60,
+    "url": "https://go.hotmart.com/AFILIADO123?ap=P87654321Y",
+    "category": "Productividad"
+  }
+
 ]
