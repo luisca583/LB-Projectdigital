@@ -1,7 +1,8 @@
-/* Fuente Inter (Google) */
+/* Fuente Inter */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
 
 :root {
+<<<<<<< HEAD
   /* Colores principales */
   --bg: #fafafa;            /* Fondo claro */
   --fg: #1a1a1a;            /* Texto principal */
@@ -83,5 +84,3 @@ summary {
   body { font-size: 15px; padding: 0 0.5rem 3rem; }
   table, th, td { font-size: 15px; }
 }
-
-
