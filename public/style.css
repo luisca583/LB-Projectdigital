@@ -188,6 +188,7 @@ summary {
   background-image: url('/LB-Projectdigital/img/banner-lbprojectdigital.jpg');
   background-size: cover;
   background-position: center;
+  background-color: #0a0a0a; /* color de fondo por si falla imagen */
   height: 100vh;
   width: 100%;
   display: flex;
@@ -195,12 +196,20 @@ summary {
   justify-content: center;
   color: white;
   text-align: center;
-  padding: 2rem;
-  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.4); /* oscurecer */
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* capa oscura encima */
+  z-index: 1;
 }
 
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.6); /* fondo semi-transparente */
+  position: relative;
+  z-index: 2;
   padding: 2rem;
   border-radius: var(--radius);
   max-width: 90%;
@@ -208,12 +217,29 @@ summary {
 }
 
 .hero-content h1 {
-  margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
+  margin: 0 0 1rem;
 }
 
 .hero-content p {
   font-size: 1.2rem;
-  margin: 1rem 0;
+  margin-bottom: 1.5rem;
 }
+
+.start-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--brand);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  transition: background 0.3s ease;
+}
+
+.start-button:hover {
+  background: var(--brand-light);
+}
+
 
