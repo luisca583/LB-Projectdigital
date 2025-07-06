@@ -246,3 +246,32 @@ summary {
 html {
   scroll-behavior: smooth;
 }
+.catalogo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.curso-card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.curso-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--brand);
+}
+
+.btn-detalles {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--brand);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+}
