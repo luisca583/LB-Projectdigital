@@ -27,5 +27,15 @@
     "url": "https://go.hotmart.com/AFILIADO123?ap=P87654321Y",
     "category": "Productividad"
   }
+,
+{
+  "slug": "copywriting-experto",
+  "nombre": "Copywriting Experto",
+  "precio": "$59",
+  "categoria": "Marketing y Escritura Persuasiva",
+  "descripcion": "Aprende a escribir textos que venden con técnicas de copywriting profesional para productos digitales.",
+  "enlace": "https://go.hotmart.com/COPY1234"
+}
+
 
 ]
