@@ -156,3 +156,30 @@ summary {
   text-decoration: none;
   font-weight: bold;
 }
+.landing-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.banner {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.start-button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--brand);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  transition: background 0.3s ease;
+}
+
+.start-button:hover {
+  background: var(--brand-light);
+}
