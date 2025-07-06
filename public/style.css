@@ -84,3 +84,39 @@ summary {
   body { font-size: 15px; padding: 0 0.5rem 3rem; }
   table, th, td { font-size: 15px; }
 }
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.course-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+.course-card h2 {
+  margin-top: 0;
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.course-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+}
