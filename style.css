@@ -1,0 +1,349 @@
+/* Fuente Inter */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap");
+
+:root {
+<<<<<<< HEAD
+  /* Colores principales */
+  --bg: #fafafa;            /* Fondo claro */
+  --fg: #1a1a1a;            /* Texto principal */
+  --brand: #2563eb;         /* Azul corporativo */
+  --brand-light: #3b82f6;   /* Azul claro (hover) */
+  --radius: 10px;           /* Bordes redondeados */
+}
+
+/* Reset básico */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background: var(--bg);
+  color: var(--fg);
+  padding: 0 1rem 4rem;
+  max-width: 860px;
+  margin-inline: auto;      /* Centrar contenido */
+}
+
+h1, h2, h3 { font-weight: 600; line-height: 1.2; margin: 1rem 0; }
+p { margin: 1rem 0; }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.6rem 0.4rem;
+  border: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+th { background: #f3f4f6; font-weight: 600; }
+
+a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--brand-light);
+}
+
+/* Botón principal */
+.btn {
+  display: inline-block;
+  margin: 1rem 0;
+  padding: 0.6rem 1.2rem;
+  background: var(--brand);
+  color: #fff;
+  border-radius: var(--radius);
+}
+
+.btn:hover {
+  background: var(--brand-light);
+}
+
+/* Estilo de detalles (FAQ) */
+details {
+  margin: 1rem 0;
+  border: 1px solid #e5e7eb;
+  border-radius: var(--radius);
+  padding: 0.6rem 1rem;
+  background: #fff;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* Responsivo simple */
+@media (max-width: 640px) {
+  body { font-size: 15px; padding: 0 0.5rem 3rem; }
+  table, th, td { font-size: 15px; }
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.course-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+.course-card h2 {
+  margin-top: 0;
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.course-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+}
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.course-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+.course-card h2 {
+  margin-top: 0;
+  color: var(--brand);
+  font-size: 1.2rem;
+}
+
+.course-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  background: var(--brand);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-weight: bold;
+}
+.landing-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.banner {
+  max-width: 100%;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.start-button {
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: var(--brand);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  transition: background 0.3s ease;
+}
+
+.start-button:hover {
+  background: var(--brand-light);
+}
+.hero-banner {
+  position: relative;
+  background-image: url('/LB-Projectdigital/img/banner-lbprojectdigital.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: #0a0a0a; /* color de fondo por si falla imagen */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* capa oscura encima */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 2rem;
+  border-radius: var(--radius);
+  max-width: 90%;
+  width: 500px;
+}
+
+.hero-content h1 {
+  font-size: 2.8rem;
+  margin: 0 0 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.start-button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--brand);
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  transition: background 0.3s ease;
+}
+
+.start-button:hover {
+  background: var(--brand-light);
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+.catalogo-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-top: 2rem;
+}
+
+.curso-card {
+  background: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.curso-card h3 {
+  margin: 0 0 0.5rem;
+  color: var(--brand);
+}
+
+.btn-detalles {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: var(--brand);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  text-decoration: none;
+}
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+.curso-detalle {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.curso-detalle h1 {
+  color: var(--brand);
+  margin-bottom: 1rem;
+}
+
+.curso-detalle ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.curso-detalle ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+.buy-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #1e40af;
+}
+.buy-button {
+  display: inline-block;
+  background-color: #2563eb;
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #1e40af;
+}
+.social-float {
+  position: fixed;
+  right: 20px;
+  z-index: 99;
+}
+
+.facebook-float {
+  bottom: 80px;
+}
+
+.instagram-float {
+  bottom: 140px;
+}
