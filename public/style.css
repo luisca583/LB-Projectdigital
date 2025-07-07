@@ -281,3 +281,26 @@ html {
   right: 20px;
   z-index: 100;
 }
+.curso-detalle {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+.curso-detalle h1 {
+  color: var(--brand);
+  margin-bottom: 1rem;
+}
+
+.curso-detalle ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.curso-detalle ul li {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
