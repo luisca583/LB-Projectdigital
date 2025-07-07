@@ -334,3 +334,16 @@ html {
 .buy-button:hover {
   background-color: #1e40af;
 }
+.social-float {
+  position: fixed;
+  right: 20px;
+  z-index: 99;
+}
+
+.facebook-float {
+  bottom: 80px;
+}
+
+.instagram-float {
+  bottom: 140px;
+}
